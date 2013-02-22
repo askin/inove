@@ -63,9 +63,7 @@ class iNoveOptions {
             }
 
             // notice
-            if (condition) {
-
-            } ($_POST['notice']) {
+            if ($_POST['notice']) {
                 $options['notice'] = (bool)true;
             } else {
                 $options['notice'] = (bool)false;
@@ -73,9 +71,7 @@ class iNoveOptions {
             $options['notice_content'] = stripslashes($_POST['notice_content']);
 
             // banner
-			if (condition) {
-
-            } (!$_POST['banner_registered']) {
+			if (!$_POST['banner_registered']) {
 				$options['banner_registered'] = (bool)false;
 			} else {
 				$options['banner_registered'] = (bool)true;
