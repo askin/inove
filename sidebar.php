@@ -39,7 +39,15 @@
 			<?php if($options['feed_email'] && $options['feed_url_email']) : ?>
 				<a rel="external nofollow" id="feedemail" title="<?php _e('Subscribe to this blog via email...', 'inove'); ?>" href="<?php echo $options['feed_url_email']; ?>"><?php _e('Email feed', 'inove'); ?></a>
 			<?php endif; if($options['twitter'] && $options['twitter_username']) : ?>
-				<a id="followme" title="<?php _e('Follow me!', 'inove'); ?>" href="http://twitter.com/<?php echo $options['twitter_username']; ?>/"><?php _e('Twitter', 'inove'); ?></a>
+            <div id="followme_twitter">
+			  <a id="followme" title="<?php _e('Follow me!', 'inove'); ?>" href="http://twitter.com/<?php echo $options['twitter_username']; ?>/"><?php _e('Twitter', 'inove'); ?></a>
+              <ul id="twitter_followme_widget">
+                <li>
+                  <a class="twitter-timeline" width="300" data-dnt="true" href="https://twitter.com/kelebeks"  data-widget-id="305426810445905920">Tweets by @kelebeks</a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </li>
+              </ul>
+            </div>
 			<?php endif; ?>
 			<div class="fixed"></div>
 		</div>
@@ -47,8 +55,8 @@
 
 	<!-- showcase -->
 	<?php if( $options['showcase_content'] && (
-		($options['showcase_registered'] && $user_ID) || 
-		($options['showcase_commentator'] && !$user_ID && isset($_COOKIE['comment_author_'.COOKIEHASH])) || 
+		($options['showcase_registered'] && $user_ID) ||
+		($options['showcase_commentator'] && !$user_ID && isset($_COOKIE['comment_author_'.COOKIEHASH])) ||
 		($options['showcase_visitor'] && !$user_ID && !isset($_COOKIE['comment_author_'.COOKIEHASH]))
 	) ) : ?>
 		<div class="widget">

@@ -160,6 +160,11 @@ function loadMenus() {
 		new GhostlyMenu(subscribe, align);
 	}
 
+	var followme_twitter = document.getElementById('followme_twitter');
+	if (followme_twitter) {
+		new GhostlyMenu(followme_twitter, align);
+	}
+
 	var menubar = document.getElementById('menus');
 	if (menubar) {
 		var list = menubar.getElementsByTagName('ul');

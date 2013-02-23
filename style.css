@@ -644,6 +644,24 @@ textarea {
 	background: url(img/feeds.gif) 5px -95px no-repeat;
 	margin-left:10px;
 }
+
+#followme_twitter ul {
+	display:none;
+	position:absolute;
+	background:#F4F5F7;
+	border:1px solid #B7B7B7;
+	width:300px;
+	padding:5px;
+}
+#followme_twitter li {
+	background:transparent;
+	list-style:none;
+	float:left;
+	margin:0;
+	padding:0;
+	display:block;
+}
+
 #subscribe ul {
 	display:none;
 	position:absolute;
