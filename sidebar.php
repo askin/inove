@@ -43,7 +43,7 @@
 			  <a id="followme" title="<?php _e('Follow me!', 'inove'); ?>" href="http://twitter.com/<?php echo $options['twitter_username']; ?>/"><?php _e('Twitter', 'inove'); ?></a>
               <ul id="twitter_followme_widget">
                 <li>
-                  <a class="twitter-timeline" width="300" data-dnt="true" href="https://twitter.com/kelebeks"  data-widget-id="305426810445905920">Tweets by @kelebeks</a>
+                  <a class="twitter-timeline" width="300" data-dnt="true" href="https://twitter.com/<?php echo $options['twitter_username']; ?>"  data-widget-id="305426810445905920">Tweets by @<?php echo $options['twitter_username']; ?></a>
                   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                 </li>
               </ul>
