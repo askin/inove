@@ -165,6 +165,11 @@ function loadMenus() {
 		new GhostlyMenu(followme_twitter, align);
 	}
 
+	var github_widget = document.getElementById('github_widget');
+	if (github_widget) {
+		new GhostlyMenu(github_widget, align);
+	}
+
 	var menubar = document.getElementById('menus');
 	if (menubar) {
 		var list = menubar.getElementsByTagName('ul');

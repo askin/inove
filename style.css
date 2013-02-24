@@ -633,6 +633,17 @@ textarea {
 	text-decoration:none;
 	font-size:11px;
 }
+
+#sidebar #github_link {
+	height:25px;
+	line-height:25px;
+	display:block;
+	padding:5px 5px 5px 40px;
+	float:left;
+	text-decoration:none;
+	font-size:11px;
+}
+
 #sidebar #feedrss {
 	background: url(img/feeds.gif) 5px 5px no-repeat;
 }
@@ -645,7 +656,25 @@ textarea {
 	margin-left:10px;
 }
 
+#sidebar #github_link {
+	background: url(img/github.png) 5px no-repeat;
+}
+
 #followme_twitter ul {
+	display:none;
+	position:absolute;
+	width:300px;
+	padding:5px;
+}
+#followme_twitter li {
+	list-style:none;
+	float:left;
+	margin:0;
+	padding:0;
+	display:block;
+}
+
+#github_widget ul {
 	display:none;
 	position:absolute;
 	background:#F4F5F7;
@@ -653,10 +682,9 @@ textarea {
 	width:300px;
 	padding:5px;
 }
-#followme_twitter li {
+#github_widget li {
 	background:transparent;
 	list-style:none;
-	float:left;
 	margin:0;
 	padding:0;
 	display:block;

@@ -48,6 +48,33 @@
                 </li>
               </ul>
             </div>
+			<?php endif; if($options['github'] && $options['github_username']) : ?>
+            <!-- FIXME: get username from configuration -->
+            <div id="github_widget">
+			  <a id="github_link" class="github_link" title="<?php _e('Github!', 'inove'); ?>" href="https://github.com/askin/" ><?php _e('Github', 'inove'); ?></a>
+              <ul id="github_content">
+                <li class="github_li">
+                  <a class="oc" href="oc.com"></a>
+                  <link rel="stylesheet" href="http://blog.yollu.com/wp-content/themes/inove/github.min.css">
+<script src="http://blog.yollu.com/wp-content/themes/inove/js/jquery.min.js"></script>
+<script src="http://blog.yollu.com/wp-content/themes/inove/js/jquery.github.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#some-element").github({
+			user: "askin",
+			show_extended_info: true,
+			show_follows: true,
+			width: "300px",
+			show_repos: 5,
+			oldest_first: false
+		});
+	});
+</script>
+<div id="some-element"></div>
+                </li>
+              </ul>
+            </div>
 			<?php endif; ?>
 			<div class="fixed"></div>
 		</div>

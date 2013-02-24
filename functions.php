@@ -33,6 +33,7 @@ class iNoveOptions {
             $options['feed_url_email'] = '';
             $options['twitter'] = false;
             $options['twitter_username'] = '';
+            $options['github_username'] = '';
             $options['analytics'] = false;
             $options['analytics_content'] = '';
             update_option('inove_options', $options);
@@ -162,6 +163,14 @@ class iNoveOptions {
                 $options['twitter'] = (bool)false;
             }
             $options['twitter_username'] = stripslashes($_POST['twitter_username']);
+
+            // github
+            if ($_POST['github']) {
+                $options['github'] = (bool)true;
+            } else {
+                $options['github'] = (bool)false;
+            }
+            $options['github_username'] = stripslashes($_POST['github_username']);
 
             // analytics
             if ($_POST['analytics']) {
@@ -416,6 +425,25 @@ class iNoveOptions {
                         <br />
                         <a href="http://twitter.com/neoease/" onclick="window.open(this.href);return false;">Follow NeoEase</a>
                          | <a href="http://twitter.com/mg12/" onclick="window.open(this.href);return false;">Follow MG12</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="form-table">
+            <tbody>
+                <tr valign="top">
+                    <th scope="row"><?php _e('Github', 'inove'); ?></th>
+                    <td>
+                        <label>
+                            <input name="github" type="checkbox" value="checkbox" <?php if($options['github']) echo "checked='checked'"; ?> />
+                             <?php _e('Add Github button.', 'inove'); ?>
+                        </label>
+                        <br />
+                         <?php _e('Github username:', 'inove'); ?>
+                         <input type="text" name="github_username" id="github_username" class="code" size="40" value="<?php echo($options['github_username']); ?>">
+                        <br />
+                        <a href="https://github.com/askin" onclick="window.open(this.href);return false;">askin@github</a>
                     </td>
                 </tr>
             </tbody>
