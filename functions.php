@@ -34,6 +34,7 @@ class iNoveOptions {
             $options['twitter'] = false;
             $options['twitter_username'] = '';
             $options['github_username'] = '';
+            $options['github_repo_count'] = 0;
             $options['analytics'] = false;
             $options['analytics_content'] = '';
             update_option('inove_options', $options);
@@ -171,6 +172,14 @@ class iNoveOptions {
                 $options['github'] = (bool)false;
             }
             $options['github_username'] = stripslashes($_POST['github_username']);
+            if ($_POST['github_repo_count']) {
+                $options['github_repo_count'] = stripslashes($_POST['github_repo_count']);
+                if (!is_numeric($options['github_repo_count'])) {
+                    $options['github_repo_count'] = 0;
+                }
+            } else {
+                $options['github_repo_count'] = 0;
+            }
 
             // analytics
             if ($_POST['analytics']) {
@@ -442,6 +451,9 @@ class iNoveOptions {
                         <br />
                          <?php _e('Github username:', 'inove'); ?>
                          <input type="text" name="github_username" id="github_username" class="code" size="40" value="<?php echo($options['github_username']); ?>">
+                        <br />
+                         <?php _e('Github repositories:', 'inove'); ?>
+                         <input type="text" name="github_repo_count" id="github_repo_count" class="code" size="40" value="<?php echo($options['github_repo_count']); ?>">
                         <br />
                         <a href="https://github.com/askin" onclick="window.open(this.href);return false;">askin@github</a>
                     </td>

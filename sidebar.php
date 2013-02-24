@@ -65,7 +65,7 @@
 			show_extended_info: true,
 			show_follows: true,
 			width: "300px",
-			show_repos: 5,
+			show_repos: <?php echo $options['github_repo_count']; ?>,
 			oldest_first: false
 		});
 	});
