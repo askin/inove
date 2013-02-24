@@ -153,3 +153,6 @@
                        FIX    Fixed style for Firefox2.
                        FIX    Fixed trackback style.
                        FIX    Fixed 'Categories & Tags' options.
+            2013/02/24 ADD    Add github option
+                       ADD    Add github pop up widget
+                       ADD    Add twitter pop up widget
