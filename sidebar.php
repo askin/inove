@@ -49,9 +49,8 @@
               </ul>
             </div>
 			<?php endif; if($options['github'] && $options['github_username']) : ?>
-            <!-- FIXME: get username from configuration -->
             <div id="github_widget">
-			  <a id="github_link" class="github_link" title="<?php _e('Github!', 'inove'); ?>" href="https://github.com/askin/" ><?php _e('Github', 'inove'); ?></a>
+			  <a id="github_link" class="github_link" title="<?php _e('Github!', 'inove'); ?>" href="https://github.com/<?php echo $options['github_username']; ?>/" ><?php _e('Github', 'inove'); ?></a>
               <ul id="github_content">
                 <li class="github_li">
                   <a class="oc" href="oc.com"></a>
@@ -62,7 +61,7 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		$("#some-element").github({
-			user: "askin",
+			user: "<?php echo $options['github_username']; ?>",
 			show_extended_info: true,
 			show_follows: true,
 			width: "300px",
