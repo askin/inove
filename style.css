@@ -644,6 +644,16 @@ textarea {
 	font-size:11px;
 }
 
+#sidebar #google_plus_link {
+	height:25px;
+	line-height:25px;
+	display:block;
+	padding:5px 5px 5px 40px;
+	float:left;
+	text-decoration:none;
+	font-size:11px;
+}
+
 #sidebar #feedrss {
 	background: url(img/feeds.gif) 5px 5px no-repeat;
 }
@@ -658,6 +668,11 @@ textarea {
 
 #sidebar #github_link {
 	background: url(img/github.png) 5px no-repeat;
+}
+
+#sidebar #google_plus_link {
+	background: url(img/google-plus.png) 5px no-repeat;
+    background-size: 28px;
 }
 
 #followme_twitter ul {

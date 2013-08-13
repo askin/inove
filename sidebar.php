@@ -55,26 +55,29 @@
                 <li class="github_li">
                   <a class="oc" href="oc.com"></a>
                   <link rel="stylesheet" href="http://blog.yollu.com/wp-content/themes/inove/github.min.css">
-<script src="http://blog.yollu.com/wp-content/themes/inove/js/jquery.min.js"></script>
-<script src="http://blog.yollu.com/wp-content/themes/inove/js/jquery.github.min.js"></script>
+                  <script src="http://blog.yollu.com/wp-content/themes/inove/js/jquery.min.js"></script>
+                  <script src="http://blog.yollu.com/wp-content/themes/inove/js/jquery.github.min.js"></script>
 
-<script type="text/javascript">
-	$(document).ready(function(){
-		$("#some-element").github({
-			user: "<?php echo $options['github_username']; ?>",
-			show_extended_info: true,
-			show_follows: true,
-			width: "300px",
-			show_repos: <?php echo $options['github_repo_count']; ?>,
-			oldest_first: false
-		});
-	});
-</script>
-<div id="some-element"></div>
+                  <script type="text/javascript">
+	                $(document).ready(function(){
+		                $("#some-element").github({
+			                user: "<?php echo $options['github_username']; ?>",
+			                show_extended_info: true,
+			                show_follows: true,
+			                width: "300px",
+			                show_repos: <?php echo $options['github_repo_count']; ?>,
+			                oldest_first: false
+		                });
+	                });
+                  </script>
+                  <div id="some-element"></div>
                 </li>
               </ul>
             </div>
 			<?php endif; ?>
+            <div id="google_plus">
+			  <a id="google_plus_link" rel="author" title="<?php _e('Google Plus!', 'inove'); ?>" href="https://plus.google.com/100530431446628993707"><?php _e('', 'inove'); ?></a>
+            </div>
 			<div class="fixed"></div>
 		</div>
 	</div>
