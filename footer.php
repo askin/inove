@@ -37,7 +37,7 @@
 		?>
 	</div>
 	<div id="themeinfo">
-		<?php printf(__('Theme by <a href="%1$s">NeoEase</a>. Valid <a href="%2$s">XHTML 1.1</a> and <a href="%3$s">CSS 3</a>.', 'inove'), 'http://www.neoease.com/', 'http://validator.w3.org/check?uri=referer', 'http://jigsaw.w3.org/css-validator/check/referer?profile=css3'); ?>
+		<?php printf(__('Clone theme from <a href="%1$s">GitHub</a>. Valid <a href="%2$s">XHTML 1.1</a> and <a href="%3$s">CSS 3</a>.', 'inove'), 'https://github.com/askin/inove/', 'http://validator.w3.org/check?uri=referer', 'http://jigsaw.w3.org/css-validator/check/referer?profile=css3'); ?>
 	</div>
 </div>
 <!-- footer END -->
@@ -58,4 +58,3 @@
 
 </body>
 </html>
-
