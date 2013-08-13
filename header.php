@@ -27,7 +27,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 
 	<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
-        <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all posts" href="http://feeds.feedburner.com/askin" />
+        <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all posts" href="<?php echo($feed); ?>" />
         <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all comments" href="http://blog.yollu.com/comments/feed/" />
 
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
