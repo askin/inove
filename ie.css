@@ -1,9 +1,9 @@
 pre {
-	word-wrap:break-word; /* Internet Explorer 5.5+ */
+    word-wrap:break-word; /* Internet Explorer 5.5+ */
 }
 a span, 
 #submitbox #submit, 
 #searchbox .button, 
 #subscribe li a {
-	cursor:hand;
+    cursor:hand;
 }

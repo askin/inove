@@ -29,16 +29,16 @@ small,
 #sidebar #feedrss, 
 #sidebar #feedemail, 
 #sidebar #followme {
-	font-size:12px;
+    font-size:12px;
 }
 #caption {
-	padding:25px 30px 21px !important;
-	padding:25px 30px 20px;
+    padding:25px 30px 21px !important;
+    padding:25px 30px 20px;
 }
 #cmtswitcher #trackbacktab {
-	padding:5px 10px !important;
-	padding:6px 10px;
+    padding:5px 10px !important;
+    padding:6px 10px;
 }
 *+html #cmtswitcher #trackbacktab {
-	padding:6px 10px !important;
+    padding:6px 10px !important;
 }

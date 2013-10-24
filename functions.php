@@ -3,9 +3,9 @@
 /** inove options */
 class iNoveOptions {
 
-	function getOptions() {
-		$options = get_option('inove_options');
-		if (!is_array($options)) {
+    function getOptions() {
+        $options = get_option('inove_options');
+        if (!is_array($options)) {
             $options['google_cse'] = false;
             $options['google_cse_cx'] = '';
             $options['menu_type'] = 'pages';
@@ -73,30 +73,30 @@ class iNoveOptions {
             $options['notice_content'] = stripslashes($_POST['notice_content']);
 
             // banner
-			if (!$_POST['banner_registered']) {
-				$options['banner_registered'] = (bool)false;
-			} else {
-				$options['banner_registered'] = (bool)true;
-			}
-			if (!$_POST['banner_commentator']) {
-				$options['banner_commentator'] = (bool)false;
-			} else {
-				$options['banner_commentator'] = (bool)true;
-			}
-			if (!$_POST['banner_visitor']) {
-				$options['banner_visitor'] = (bool)false;
-			} else {
-				$options['banner_visitor'] = (bool)true;
-			}
-			$options['banner_content'] = stripslashes($_POST['banner_content']);
+            if (!$_POST['banner_registered']) {
+                $options['banner_registered'] = (bool)false;
+            } else {
+                $options['banner_registered'] = (bool)true;
+            }
+            if (!$_POST['banner_commentator']) {
+                $options['banner_commentator'] = (bool)false;
+            } else {
+                $options['banner_commentator'] = (bool)true;
+            }
+            if (!$_POST['banner_visitor']) {
+                $options['banner_visitor'] = (bool)false;
+            } else {
+                $options['banner_visitor'] = (bool)true;
+            }
+            $options['banner_content'] = stripslashes($_POST['banner_content']);
 
-			// showcase
-			if (!$_POST['showcase_registered']) {
-				$options['showcase_registered'] = (bool)false;
-			} else {
-				$options['showcase_registered'] = (bool)true;
-			}
-		    if (!$_POST['showcase_commentator']) {
+            // showcase
+            if (!$_POST['showcase_registered']) {
+                $options['showcase_registered'] = (bool)false;
+            } else {
+                $options['showcase_registered'] = (bool)true;
+            }
+            if (!$_POST['showcase_commentator']) {
                 $options['showcase_commentator'] = (bool)false;
             } else {
                 $options['showcase_commentator'] = (bool)true;
@@ -497,8 +497,8 @@ class iNoveOptions {
                 <tr valign="top">
                     <th scope="row">Donation</th>
                     <td>
-            			If you find my work useful and you want to encourage the development of more free resources, you can do it by donating...
-		                <br />
+                        If you find my work useful and you want to encourage the development of more free resources, you can do it by donating...
+                        <br />
                         <input type="hidden" name="cmd" value="_s-xclick" />
                         <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----" />
                         <input style="border:none;" type="image" src="https://www.paypal.com/en_GB/i/btn/btn_donate_LG.gif" name="submit" alt="" />
