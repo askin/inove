@@ -4,8 +4,10 @@
 	$options = get_option('inove_options');
 	if (is_home()) {
 		$home_menu = 'current_page_item';
+        $title = get_bloginfo('name') . ' | ' . get_bloginfo('description');
 	} else {
 		$home_menu = 'page_item';
+        $title = wp_title('|', false, 'right') . get_bloginfo('name');
 	}
 	if($options['feed'] && $options['feed_url']) {
 		if (substr(strtoupper($options['feed_url']), 0, 7) == 'HTTP://') {
@@ -26,7 +28,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 
-	<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
+    <title><?php echo($title); ?></title>
         <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all posts" href="<?php echo($feed); ?>" />
         <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all comments" href="http://blog.yollu.com/comments/feed/" />
 
