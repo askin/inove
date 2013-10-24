@@ -21,49 +21,49 @@
 ?>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head profile="http://gmpg.org/xfn/11">
+  <head profile="http://gmpg.org/xfn/11">
     <!--
-    Birine mi baktin gardas?
+        Birine mi baktin gardas?
     -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 
     <title><?php echo($title); ?></title>
-        <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all posts" href="<?php echo($feed); ?>" />
-        <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all comments" href="http://blog.yollu.com/comments/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all posts" href="<?php echo($feed); ?>" />
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all comments" href="http://blog.yollu.com/comments/feed/" />
 
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
     <!-- style START -->
     <!-- default style -->
-        <style type="text/css" media="screen">@import url( http://blog.yollu.com/wp-content/themes/inove/style.css );</style>
+    <style type="text/css" media="screen">@import url( http://blog.yollu.com/wp-content/themes/inove/style.css );</style>
     <!--[if IE]>
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/ie.css" type="text/css" media="screen" />
     <![endif]-->
     <!-- style END -->
 
     <!-- script START -->
-        <script type="text/javascript" src="http://blog.yollu.com/wp-content/themes/inove/js/base.js"></script>
-        <script type="text/javascript" src="http://blog.yollu.com/wp-content/themes/inove/js/menu.js"></script>
+    <script type="text/javascript" src="http://blog.yollu.com/wp-content/themes/inove/js/base.js"></script>
+    <script type="text/javascript" src="http://blog.yollu.com/wp-content/themes/inove/js/menu.js"></script>
     <!-- script END -->
 
     <?php wp_head(); ?>
-</head>
+  </head>
 
-<?php flush(); ?>
+  <?php flush(); ?>
 
-<body>
-<!-- wrap START -->
-<div id="wrap">
+  <body>
+    <!-- wrap START -->
+    <div id="wrap">
 
-<!-- container START -->
-<div id="container" <?php if($options['nosidebar'] || $inove_nosidebar){echo 'class="one-column"';} ?> >
+      <!-- container START -->
+      <div id="container" <?php if($options['nosidebar'] || $inove_nosidebar){echo 'class="one-column"';} ?> >
 
-<?php include('templates/header.php'); ?>
+        <?php include('templates/header.php'); ?>
 
-<!-- content START -->
-<div id="content">
+        <!-- content START -->
+        <div id="content">
 
-    <!-- main START -->
-    <div id="main">
+          <!-- main START -->
+          <div id="main">
