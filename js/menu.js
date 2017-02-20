@@ -30,7 +30,7 @@ GhostlyMenu.prototype = {
         cleanWhitespace(this.body).lastChild.getElementsByTagName('a')[0].className += ' last';
 
         setStyle(this.body, 'visibility', 'hidden');
-        setStyle(this.body, 'display', 'block');
+        setStyle(this.body, 'display', 'none');
 
         addListener(this.obj, 'mouseover', bind(this, this.activate), false);
         addListener(this.obj, 'mouseout', bind(this, this.deactivate), false);
@@ -60,6 +60,7 @@ GhostlyMenu.prototype = {
         setStyle(this.body, 'left', left + 'px');
         setStyle(this.body, 'top', top + 'px');
         setStyle(this.body, 'visibility', 'visible');
+        setStyle(this.body, 'display', 'block');
     },
 
     deactivate: function(){
@@ -69,6 +70,7 @@ GhostlyMenu.prototype = {
             clearInterval(tid);
             if (!/current/.test(thismenu.title.className)) {
                 setStyle(thismenu.body, 'visibility', 'hidden');
+                setStyle(thismenu.body, 'display', 'none');
             }
             return false;
         }, 400);

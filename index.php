@@ -16,7 +16,7 @@
 <?php endif; ?>
 
 <!-- Rasgele Sozler -->
-<div><blockquote><?php ysoz(); ?></blockquote></div>
+<div><?php ysoz_all(); ?></div>
 <!-- Rasgele Sozler -->
 <?php if (have_posts()) : while (have_posts()) : the_post(); update_post_caches($posts); ?>
     <div class="post" id="post-<?php the_ID(); ?>">
@@ -52,5 +52,4 @@
     <?php endif; ?>
     <div class="fixed"></div>
 </div>
-
 <?php get_footer(); ?>
