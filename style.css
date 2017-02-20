@@ -659,11 +659,11 @@ textarea {
 }
 #sidebar #feedemail {
     background: url(img/feeds.gif) 5px -45px no-repeat;
-    margin-left:10px;
+    /* margin-left:10px; */
 }
 #sidebar #followme {
     background: url(img/feeds.gif) 5px -95px no-repeat;
-    margin-left:10px;
+    /* margin-left:10px; */
 }
 
 #sidebar #github_link {
