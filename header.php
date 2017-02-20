@@ -30,22 +30,22 @@
 
     <title><?php echo($title); ?></title>
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all posts" href="<?php echo($feed); ?>" />
-    <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all comments" href="http://blog.yollu.com/comments/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all comments" href="/comments/feed/" />
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
     <!-- style START -->
     <!-- default style -->
-    <style type="text/css" media="screen">@import url( http://blog.yollu.com/wp-content/themes/inove/style.css );</style>
+    <style type="text/css" media="screen">@import url( /wp-content/themes/inove/style.css );</style>
     <!--[if IE]>
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/ie.css" type="text/css" media="screen" />
     <![endif]-->
     <!-- style END -->
 
     <!-- script START -->
-    <script type="text/javascript" src="http://blog.yollu.com/wp-content/themes/inove/js/base.js"></script>
-    <script type="text/javascript" src="http://blog.yollu.com/wp-content/themes/inove/js/menu.js"></script>
+    <script type="text/javascript" src="/wp-content/themes/inove/js/base.js"></script>
+    <script type="text/javascript" src="/wp-content/themes/inove/js/menu.js"></script>
     <!-- script END -->
 
     <?php wp_head(); ?>

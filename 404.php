@@ -17,7 +17,7 @@
   <body>
     <div id="container">
       <div id="talker">
-        <a href="http://blog.yollu.com/">
+        <a href="/">
           <img src="<?php bloginfo('template_url'); ?>/img/lovelace.gif" alt="<?php _e('Talker', 'inove'); ?>" />
         </a>
       </div>
