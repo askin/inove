@@ -55,10 +55,9 @@
         echo($options['analytics_content']);
     }
 ?>
-<?php
-    echo "<script type=\"text/javascript\">\n";
-    echo "    if (typeof randomQuote !== 'undefined') { $(randomQuote).show(); }\n";
-    echo "</script>";
-?>
+
+<script type=\"text/javascript\">
+    if (typeof randomQuote !== 'undefined') { $(randomQuote).show(); }
+</script>
 </body>
 </html>
