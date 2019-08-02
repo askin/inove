@@ -26,7 +26,6 @@ class iNoveOptions {
             $options['categories'] = true;
             $options['tags'] = true;
             $options['ctrlentry'] = false;
-            $options['feed_readers'] = true;
             $options['feed'] = false;
             $options['feed_url'] = '';
             $options['feed_email'] = false;
@@ -138,12 +137,6 @@ class iNoveOptions {
                 $options['ctrlentry'] = (bool)false;
             }
 
-            // feed
-            if (!$_POST['feed_readers']) {
-                $options['feed_readers'] = (bool)false;
-            } else {
-                $options['feed_readers'] = (bool)true;
-            }
             if ($_POST['feed']) {
                 $options['feed'] = (bool)true;
             } else {
@@ -398,11 +391,6 @@ class iNoveOptions {
                 <tr valign="top">
                     <th scope="row"><?php _e('Feed', 'inove'); ?></th>
                     <td>
-                        <label>
-                            <input name="feed_readers" type="checkbox" value="checkbox" <?php if($options['feed_readers']) echo "checked='checked'"; ?> />
-                             <?php _e('Show the feed reader list when mouse over on feed button.', 'inove'); ?>
-                        </label>
-                        <br />
                         <label>
                             <input name="feed" type="checkbox" value="checkbox" <?php if($options['feed']) echo "checked='checked'"; ?> />
                              <?php _e('Custom feed.', 'inove'); ?>
